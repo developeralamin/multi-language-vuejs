@@ -5,10 +5,20 @@ Vue.use(VueI18n);
 
 const messages = {
     'en': {
-        welcomeMsg: 'Welcome to Your Vue.js App'
+        welcomeMsg: 'Welcome to Your Vue.js App',
+        home: 'Home',
+        about: 'About',
+        people: 'People',
+        settings: 'Settings',
+        reports: 'Reports',
     },
     'bd': {
-        welcomeMsg: 'আপনাদেরকে আমাদের ওয়েবসাইটে স্বাগতম'
+        welcomeMsg: 'আপনাদেরকে আমাদের ওয়েবসাইটে স্বাগতম',
+        home: 'হোম',
+        about: 'সম্পর্কে',
+        people: 'মানুষ',
+        settings: 'সেটিংস',
+        reports: 'রিপোর্ট',
     },
     'qa': {
         welcomeMsg: 'أهلا في موقعنا'

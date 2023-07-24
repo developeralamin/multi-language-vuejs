@@ -1,5 +1,26 @@
 <template>
   <div id="app">
+    <div class="body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+             <a href="#">{{ $t('home') }}</a>
+          </li>
+        
+          <li class="nav-item">
+             <a href="#">{{$t('about') }}</a>
+          </li>
+          <li class="nav-item">
+             <a href="#">{{$t('people') }}</a>
+          </li>
+          <li class="nav-item">
+             <a href="#">{{$t('settings') }}</a>
+          </li>
+          <li class="nav-item">
+             <a href="#">{{$t('reports') }}</a>
+          </li>
+        
+        </ul>
+      </div>
     <div>
       <button v-for="language in languages" :key="language.title" @click="changeLocale(language.language)">
           <flag :iso="language.flag" v-bind:squared=false /> {{language.title}}
@@ -51,6 +72,7 @@ button {
   border: 1px solid green;
   font-size: 18px;
   margin: 15px;
+  cursor: pointer;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -59,5 +81,14 @@ button {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+ul.navbar-nav.justify-content-end.flex-grow-1.pe-3 {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+li.nav-item a {
+  list-style: none;
+ text-decoration: none; 
 }
 </style>
